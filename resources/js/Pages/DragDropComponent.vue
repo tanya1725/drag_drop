@@ -113,9 +113,6 @@ export default {
         const sourceContainer = this.mainContainers.find(c => c.rows.some(r => r.id === id));
         console.log("row inside container");
 
-
-
-
     if (sourceContainer) {
       // Find the row within the source container
       row = sourceContainer.rows.find(r => r.id === id);
@@ -143,7 +140,7 @@ export default {
         const container = this.mainContainers[containerIndex];
 
 
-        
+
         if (container) {
           const movedRow = container.rows.splice(this.draggedRowIndex, 1)[0];
           container.rows.splice(rowIndex, 0, movedRow);
