@@ -39,5 +39,7 @@ require __DIR__.'/auth.php';
 
 
 // Route::view("mainpage","mainpage");
+Route::get('/getstudentlist', [StudentController::class, 'getStudentList']);
+Route::get('/', [StudentController::class, 'index']);
 
-Route::get('/task', [StudentController::class, 'show']);
+
